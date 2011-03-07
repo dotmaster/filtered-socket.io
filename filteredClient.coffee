@@ -1,12 +1,11 @@
 nodeBase = require 'nodeBase'
 util = require(if process.binding('natives').util then 'util' else 'sys')
-Client = require('./node_modules/socket.io/').Client
 extend = nodeBase.extend
 
 log = -> filteredClient.log arguments...
 
 
-class filteredClient extends Client
+class filteredClient extends io.Client
   @defaults: 
     logging:true
   nodeBase.static(@); #add static @options to class

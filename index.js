@@ -1,3 +1,5 @@
 //filteredClient (register/unregister/broadCast for Socket.io)
 require('coffee-script')
-module.exports.filteredClient = require ('./filteredClient');
+module.exports = io = require('./node_modules/socket.io/')
+var filteredClient = module.exports.filteredClient = require ('./filteredClient');
+io.setClient(filteredClient);
