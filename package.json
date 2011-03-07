@@ -1,0 +1,28 @@
+{
+   "name": "filteredClient-socket.io",
+   "description": "A client Transport Base Class supporting pub/sub for socket.io.",
+   "tags": [
+       "socket.io",
+       "node",
+       "client",
+       "transport",
+       "publish",
+       "subscribe",
+       "register",
+       "unregister"
+   ],
+   "version": "0.0.1",
+   "author": "dotmaster <greg@synaptic-labs.net>",
+   "repository": {
+       "type": "git",
+       "url": "https://github.com/dotmaster/filteredClient-socket.io"
+   },
+   "bugs": "https://github.com/dotmaster/filteredClient-socket.io/issues",
+   "engines": [
+       "node >= 0.4.0"
+   ],
+   "main": "index.js",
+   "dependencies": {
+       "coffee-script": ">=0.0.1"       
+    }
+}
