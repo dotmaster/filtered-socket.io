@@ -1,7 +1,7 @@
 //filteredClient (register/unregister/broadCast for Socket.io)
+if (new RegExp('v(\\d)\.(\\d)\.(\\d)').exec(process.version)[2]<4) require(__dirname + "/setup").ext('node_modules');
 require('coffee-script')
-module.exports = io = require('./node_modules/socket.io/')
+var io = module.exports = require('socket.io/')
 module.exports.oldClient = io.Client;
-module.exports.Filter = require('./filter')
-var filteredClient = module.exports.filteredClient = require ('./filteredClient');
-io.setClient(filteredClient);
+module.exports.Filter = require('./lib/filter')
+var filteredListener = module.exports.filteredListener = require ('./lib/filteredListener');
