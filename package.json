@@ -23,7 +23,8 @@
    ],
    "main": "index.js",
    "dependencies": {
-       "coffee-script": ">=0.0.1"    
+       "coffee-script": ">=0.0.1",
+       "nodeBase": ">= 0.5.4"
        //"socket.io": ">=" //patched version already included   
     }
 }
